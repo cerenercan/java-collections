@@ -3,6 +3,10 @@ package com.company.generic_classes_example;
 public class MainGenericClasses {
 
     public static void mainGenerics(){
+
+        League<Team<FootballPlayer>> footballLeague = new League<>("Football League");
+        League<Team<BaseballPlayer>> baseballLeague = new League<>("Baseball League");
+
         FootballPlayer joe = new FootballPlayer("Joe");
         BaseballPlayer pat = new BaseballPlayer("Pat");
         BasketballPlayer jordan = new BasketballPlayer("Jordan");
@@ -24,10 +28,17 @@ public class MainGenericClasses {
         Team<FootballPlayer> hawthorn = new Team<>("Hawthorn");
         Team<FootballPlayer> fremantle = new Team<>("Fremantle");
 
+        footballLeague.add(footballTeam);
+        footballLeague.add(fenerbahce);
+        footballLeague.add(hawthorn);
+        footballLeague.add(fremantle);
+
+
         hawthorn.matchResult(fremantle, 1, 0);
         hawthorn.matchResult(footballTeam, 3, 8);
 
         footballTeam.matchResult(fremantle, 2, 1);
+
 
         System.out.println(footballTeam.numberOfPlayers());
         System.out.println(baseballTeam.numberOfPlayers());
@@ -37,6 +48,8 @@ public class MainGenericClasses {
         System.out.println(footballTeam.compareTo(hawthorn));
         System.out.println(hawthorn.compareTo(footballTeam));
         System.out.println(fenerbahce.compareTo(fremantle));
+
+        footballLeague.showLeagueTable();
 
     }
 }
