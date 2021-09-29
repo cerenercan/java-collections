@@ -10,6 +10,9 @@ public class MainGenericClasses {
         Team<FootballPlayer> footballTeam = new Team<>("Some Football Team");
         footballTeam.addPlayer(joe);
 
+        Team<BaseballPlayer> baseballTeam = new Team<>("Some Baseball Team");
+        baseballTeam.addPlayer(pat);
+
         System.out.println(footballTeam.numberOfPlayers());
 
     }
