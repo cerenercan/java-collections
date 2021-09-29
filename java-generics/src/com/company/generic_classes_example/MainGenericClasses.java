@@ -17,6 +17,18 @@ public class MainGenericClasses {
         basketballTeam.addPlayer(new BasketballPlayer("shaq"));
         basketballTeam.addPlayer(jordan);
 
+        Team<FootballPlayer> fenerbahce = new Team<>("Fenerbahce");
+        FootballPlayer footballPlayer = new FootballPlayer("Alex");
+        fenerbahce.addPlayer(footballPlayer);
+
+        Team<FootballPlayer> hawthorn = new Team<>("Hawthorn");
+        Team<FootballPlayer> fremantle = new Team<>("Fremantle");
+
+        hawthorn.matchResult(fremantle, 1, 0);
+        hawthorn.matchResult(footballTeam, 3, 8);
+
+        footballTeam.matchResult(fremantle, 2, 1);
+
         System.out.println(footballTeam.numberOfPlayers());
         System.out.println(baseballTeam.numberOfPlayers());
         System.out.println(basketballTeam.numberOfPlayers());
