@@ -33,5 +33,10 @@ public class MainGenericClasses {
         System.out.println(baseballTeam.numberOfPlayers());
         System.out.println(basketballTeam.numberOfPlayers());
 
+        System.out.println(footballTeam.compareTo(fenerbahce));
+        System.out.println(footballTeam.compareTo(hawthorn));
+        System.out.println(hawthorn.compareTo(footballTeam));
+        System.out.println(fenerbahce.compareTo(fremantle));
+
     }
 }

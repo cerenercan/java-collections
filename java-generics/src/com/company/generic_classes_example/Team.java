@@ -2,7 +2,7 @@ package com.company.generic_classes_example;
 
 import java.util.ArrayList;
 
-public class Team<T extends Player> {
+public class Team<T extends Player> implements Comparable<Team<T>>{
 
     private final String name;
     int played = 0;
@@ -57,5 +57,10 @@ public class Team<T extends Player> {
 
     public int ranking(){
         return (won * 2) + tied;
+    }
+
+    @Override
+    public int compareTo(Team<T> team) {
+        return Integer.compare(team.ranking(), this.ranking());
     }
 }
