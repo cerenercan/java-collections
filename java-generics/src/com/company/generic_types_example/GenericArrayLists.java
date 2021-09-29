@@ -1,4 +1,4 @@
-package com.company;
+package com.company.generic_types_example;
 
 import java.util.ArrayList;
 
