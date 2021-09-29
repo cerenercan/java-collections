@@ -1,0 +1,30 @@
+
+Inheritance:
+Key word: extends
++You can create a base class (i.e. Animal class) and you can add capabilities special to another case (i.e. Dog, Cat, Fish)
++You can override the methods created in base class and add new functionalities in it. 
++We can add specific methods in sub-classes.
+
+
+Difference between Inheritance and Composition:
+
+- Inheritance is a "IS-A Relationship" : Dog is an Animal (Animal is the super class and Dog is the sub-class)
+
+- Composition is a "HAS-A Relationship" : Every computer has a motherboard, or a screen. 
+
+Encapsulation:
+
+- You can only access the fields, methods by member functions of that class
+- All fields are created private and not accessible from the outside of the class
+- Getter, setters and other methods created as public to access and manage the fields and data in the encapsulated class
+- Data and implementation hiding is the biggest advantage of encapsulation
+- We can decide if the data is read only or write only
+
+
+- Multiple inheritance is applicable by implementing from multiple interfaces.
+- A Dog class can extend Animal class and implements walk interface
+- A Bird class can extend Animal class and implements walk and fly interfaces.
+
+
+
+
