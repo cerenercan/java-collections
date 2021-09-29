@@ -13,7 +13,13 @@ public class MainGenericClasses {
         Team<BaseballPlayer> baseballTeam = new Team<>("Some Baseball Team");
         baseballTeam.addPlayer(pat);
 
+        Team<BasketballPlayer> basketballTeam = new Team<>("Some Basketball Team");
+        basketballTeam.addPlayer(new BasketballPlayer("shaq"));
+        basketballTeam.addPlayer(jordan);
+
         System.out.println(footballTeam.numberOfPlayers());
+        System.out.println(baseballTeam.numberOfPlayers());
+        System.out.println(basketballTeam.numberOfPlayers());
 
     }
 }
