@@ -6,5 +6,8 @@ public class Main {
 
         System.out.println("Welcome to Java Naming Conversions!!");
 
+        MyWindow myWindow = new MyWindow("Complete Java");
+        myWindow.setVisible(true);
+
     }
 }
